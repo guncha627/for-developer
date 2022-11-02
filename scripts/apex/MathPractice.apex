@@ -1,0 +1,11 @@
+// System.debug(MathPractice.practiceOne(3.4, 5.6));
+// System.debug(MathPractice.practiceTwo(61, 1.58));
+// System.debug(MathPractice.practiceThree(6,8));
+// System.debug(MathPractice.practiceFour(68));
+// System.debug(MathPractice.practiceFour(268));
+// System.debug(MathPractice.practiceFour(268));
+// MathPractice.practiceFive('ekmek', 3);
+// MathPractice.practiceSix(3, 4, 'area');
+// MathPractice.practiceSeven(1.6, 600);
+system.debug(MathPractice.practiceEight(2, 2));
+system.debug(MathPractice.practiceEight(2, 10));
