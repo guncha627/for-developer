@@ -1,6 +1,7 @@
 public class AccountBatch implements Database.Batchable<SObject>, database.stateful{
     integer numberOfRecords = 0;
     integer count = 0;
+    //write methods
     public Database.QueryLocator start(Database.BatchableContext bc){
         Database.QueryLocator ql = database.getQueryLocator([select id, description from account]);
         return ql;
@@ -18,5 +19,5 @@ public class AccountBatch implements Database.Batchable<SObject>, database.state
     public void finish(database.BatchableContext bc){
         System.debug('Finish method executed.Batch done. Simple');
     }
-   
+   //Adding comment make code more clear
 }
