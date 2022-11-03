@@ -1,6 +1,13 @@
 trigger AccountTrigger on Account (before insert, before update, 
                                     after insert, after update) {
     // system.debug('====trigger start======');
+    //check if switch is on or off for account object.
+
+    triggerSwitch__c accountSwitch = triggerSwitch__c.getInstance('account');
+    if(accountSwitch.switch__c == false){
+        return;
+    }
+    
     if(trigger.isAfter && trigger.isInsert){
         AccountTriggerHandler.autoContactCreation(trigger.new);
     }
